@@ -11,7 +11,7 @@ class Layerx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/deveshpharswan/layerx/releases/download/v1.0.0/layerx_1.0.0_darwin_amd64.tar.gz"
-      sha256 "56210f16bcad6f58edd0072f7157c01365485906b5bd7cf6fdc6c66af013aabc"
+      sha256 "ded64823a52b3fab78910da963fa4bb4af40b852993c9c6d2b61b2d501d7fece"
 
       define_method(:install) do
         bin.install "layerx"
@@ -19,7 +19,7 @@ class Layerx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/deveshpharswan/layerx/releases/download/v1.0.0/layerx_1.0.0_darwin_arm64.tar.gz"
-      sha256 "bac56121a1e29c6eef9170eccaba000b5b0266c208109abc4e893338cd4a8384"
+      sha256 "1c7294971a363018e634601f644f7c83b7ec5d4555c0005a246e4fe58ccbc15f"
 
       define_method(:install) do
         bin.install "layerx"
@@ -30,14 +30,14 @@ class Layerx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/deveshpharswan/layerx/releases/download/v1.0.0/layerx_1.0.0_linux_amd64.tar.gz"
-      sha256 "944a612249e41bf9f81bb8f7118b34139d3b54808ff2c79f4afeafa528850fc8"
+      sha256 "6a4b1b3209b5ce5da9ebae3636905730079a102b51f3f2db2848c60061f2f99e"
       define_method(:install) do
         bin.install "layerx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/deveshpharswan/layerx/releases/download/v1.0.0/layerx_1.0.0_linux_arm64.tar.gz"
-      sha256 "84ddca5af94d8c6d38f365560e7aa0a7824caa8810c3e79e395b2ac54467cdbc"
+      sha256 "394fb3377a04b3b4f3e98b55ebde7a1d6beb7432bc932782aedaa40bf51cd585"
       define_method(:install) do
         bin.install "layerx"
       end
