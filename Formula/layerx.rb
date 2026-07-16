@@ -5,21 +5,21 @@
 class Layerx < Formula
   desc "Terminal-based Docker image layer inspector"
   homepage "https://github.com/deveshctl/layerx"
-  version "1.5.2"
+  version "1.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deveshctl/layerx/releases/download/v1.5.2/layerx_darwin_amd64.tar.gz"
-      sha256 "f61a9b84c7c74e7a87356ad97b286e8dc7535eee3634e6eae9ff874a4c572a4c"
+      url "https://github.com/deveshctl/layerx/releases/download/v1.5.3/layerx_darwin_amd64.tar.gz"
+      sha256 "5cc8121839da14088545147252c9ffc9a41dd712286e177927bbc929eb2ffa22"
 
       define_method(:install) do
         bin.install "layerx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deveshctl/layerx/releases/download/v1.5.2/layerx_darwin_arm64.tar.gz"
-      sha256 "3cf154390a70917e98a4e32bd4901e1e70b2785d8b4b0a555a4054c80ed67dbd"
+      url "https://github.com/deveshctl/layerx/releases/download/v1.5.3/layerx_darwin_arm64.tar.gz"
+      sha256 "e37fa764367fb6dddb29e81d01b5f222cdd689f0512e12c9ef69b6531a44b60f"
 
       define_method(:install) do
         bin.install "layerx"
@@ -29,15 +29,15 @@ class Layerx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deveshctl/layerx/releases/download/v1.5.2/layerx_linux_amd64.tar.gz"
-      sha256 "f9aa08530a1d8e2cf840cc95ed2e2d43f5f7dba293723b2064087c26a03713fe"
+      url "https://github.com/deveshctl/layerx/releases/download/v1.5.3/layerx_linux_amd64.tar.gz"
+      sha256 "0e1068675abc6d45403c0e4034a44e941883dde03be863b3191543eb3a7b5d06"
       define_method(:install) do
         bin.install "layerx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deveshctl/layerx/releases/download/v1.5.2/layerx_linux_arm64.tar.gz"
-      sha256 "685bc15e17f1a399c0077dcda3cdb5f50192b0c3b573f6aaa81725e87b07f5bd"
+      url "https://github.com/deveshctl/layerx/releases/download/v1.5.3/layerx_linux_arm64.tar.gz"
+      sha256 "aa85f091caf3f18994c2dd94f58a6af6e8b9f4e87f2d5689778440fee2ac50e5"
       define_method(:install) do
         bin.install "layerx"
       end
