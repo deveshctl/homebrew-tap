@@ -4,25 +4,25 @@ cask "layerx" do
     depends_on macos: :ventura
   end
 
-  version "1.6.3"
+  version "1.6.4"
 
   on_macos do
     on_arm do
-      sha256 "031bdb306cefc953ab41e28e2b64575ba03c88a7a95a98f0d5bc5214b636ae51"
+      sha256 "48ee3cf5162e3a1748b9193a4b7eb01578eec115f91c0a6ae89951cecd9bfed6"
       url "https://github.com/deveshctl/layerx/releases/download/v#{version}/layerx_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e756e22e665f9a28cbef72d8631947fb88e4853abe94f16ea2f5fc40d80ba0b7"
+      sha256 "6c47c6c2114123d5de07311647157286304e30d95f4cfa806891b54a05be8a16"
       url "https://github.com/deveshctl/layerx/releases/download/v#{version}/layerx_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "88e42bde4dc5c0be89be810ea8213844f9d955b6494623e61f9dcc5e2de1700f"
+      sha256 "f562e2b1a9b0cde5cf406fa1f5fdcab3849bf73a50bb33537fb521f96331115c"
       url "https://github.com/deveshctl/layerx/releases/download/v#{version}/layerx_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1a5b5625bdce433bdc68b91bed59698d2012a0447308d6342c9519e21aab1547"
+      sha256 "7fd46e8bc52cb7e44afd08a3e29a035fd100745ff11c06f36902e95e116d01dc"
       url "https://github.com/deveshctl/layerx/releases/download/v#{version}/layerx_linux_amd64.tar.gz"
     end
   end
